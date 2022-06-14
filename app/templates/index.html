@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<title>Title</title>
+</head>
+<body>
+
+
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+
+    <div class= "heroImage">
+        <div class="heroContents">
+
+            <img class="phone opacity-50" src="/static/index-collage.png" height="100%" width="100%">
+            
+            <div class="hero-title">
+                <h2 class="word-spacing-1 celine-peach font-size-5">Welcome,</h2>
+                <p class="font-size-2 everson">Allow me to introduce myself</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+
+    <div class="margin-3 container center">
+
+        <div class="flexbox-row">
+            <p class="font-size-1-2"> My name is</p>
+            <h2 class=" margin-1 emerson">Alexa</h2>
+        </div>
+
+        <div class="flexbox-row center">
+            <p class="" >I am a</p>
+            <h2 class="margin-1">front-end developer</h2>
+        </div>
+
+        <p class="margin-1 margin-top">who specializes in </p>
+        <h2 class="margin-3">design + branding. </h2>
+
+    </div>
+
+    <div class="margin-1 intro-text">
+        <p class="margin-3 font-size-1-2"> Design showcases the value of your business and communicates a level of luxury service. 
+        The best websites are designed with a strategic brand as the foundation. 
+        I create websites with strategy in design and branding. Web design is more than fonts and colors, 
+        it’s building a brand based on strategy that communicates the value of your business. </p>
+    </div>
+
+
+
+
+
+
+    
+
+</div>
+
+
+    {% endblock content %}
+
+    
+
+
+
+
+     
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

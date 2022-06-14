@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<title>Title</title>
+</head>
+<body>
+
+
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+
+
+    <!-- GOTH ANGEL JEWELRY  -->
+
+        <div class="item-1 website-container">
+            <div class="flexbox padding-bottom-2">
+                <h2 class="courier-new word-spacing-1">Goth Angel</h2>
+            </div>
+            <img class="phone image-border padding-1" src="/static/gothangel-portfolio-image.png" height="50%" width="50%">
+        </div>
+
+        <div class="item-2">
+            <h2 class="word-spacing-1">Project Scope</h2>
+            <p>Web Design, Graphic Design, Photo Direction</p>
+
+            <h2 class="word-spacing-1 margin-top" >Industry</h2>
+            <p>Jewelry</p>
+
+            <div class="flexbox margin-top">
+                <p>View the project</p>
+                <a class="button button1" href="https://goth-angel-jewelry.herokuapp.com/"  type="submit">goth angel</a>
+            </div>
+        </div>
+    
+
+
+    <!-- KISMET STUDIO CHICAGO -->
+
+    <div class="item-1 website-container">
+        <div class="flexbox padding-bottom-2">
+            <h2 class="horizon"> Kismet Studio</h2><p class="slim-slim"></p>
+        </div>
+        <img class="phone image-border padding-1" src="/static/kismet-portfolio-image.png" height="50%" width="50%">
+    </div>
+
+    <div class="item-2">
+        <h2 class="word-spacing-1">Project Scope</h2>
+        <p>Web Design, Graphic Design</p>
+
+        <h2 class="word-spacing-1 margin-top" >Industry</h2>
+        <p>Events, Creatives</p>
+
+        <div class="flexbox margin-top">
+            <p>View the project</p>
+            <a class="button button1" href="https://www.kismetstudiochi.com/"  type="submit">kismet studio</a>
+        </div>
+    </div>
+
+
+
+    <!-- BE LOCAL  -->
+
+    <div class="item-1 website-container">
+        <div class="flexbox padding-bottom-2">
+            <h1 class="impact outline">Be</h1>
+            <h2 class="moon margin-left-2">Local</h2>
+        </div>
+            <img class="phone image-border padding-1" src="/static/car-atbeach.png" height="50%" width="50%">
+    </div>
+    
+    <div class="item-2">
+
+            <h2 class="word-spacing-1" >Project Scope</h2>
+            <p>Branding, Web Design, Graphic Design</p>
+
+
+            <h2 class="word-spacing-1 margin-top" >Industry</h2>
+            <p>Communications, Business</p>
+
+        <div class="flexbox margin-top">
+            <p>View the project</p>
+            <a class="button button1" href="https://be-local.herokuapp.com/"  type="submit">be local</a>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock content %}

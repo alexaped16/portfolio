@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<title>Title</title>
+</head>
+<body>
+    
+    <div class="nav-container">
+
+
+        <div class="nav-item laids-container">
+            <div class="flexbox flex-start">
+                <h1 class=" celine-peach">L</h1>
+                <h1 class="manolete uppercase outline">a</h1>
+                <h1 class="celine-peach">id</h1>
+                <h1 class="celine-peach uppercase outline">e</h1>
+                <h1 class="celine-peach">s</h1>
+            </div>
+            <p>Web Design</p>
+        </div>
+
+        <div class="nav-item">
+            <a class="nav-logo" href="{{ url_for('index') }}"><img src="/static/Laids-logo-image.png" height="15%" width="15%"></a>
+        </div>
+
+
+        <div class="nav-item nav-link-container">
+
+            <a class="nav-link" href="{{ url_for('my_portfolio') }}">Portfolio</a>
+    
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+
+            <a class="nav-link" href="{{ url_for('contact') }}">Services</a>
+
+        </div>
+
+</div>
+
+
+
+
+
+<div class="grid-container">
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+</div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h2>Hours</h2>
+                <div class="days">                   
+                    <p>Mon - Tues |  Closed</p>
+                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
+                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <img id="footer-logo" src="/static/Laids-logo-image.png" width="20%" height="60%">
+                    <p>Laides Web Design © 2022</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <h3>Follow me on Insta</h3>
+                    <a id="insta" class="fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
+                    <p>1136 N. Milwaukee Ave</p>
+                    <p>Chicago, IL 60642</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+    </html>
