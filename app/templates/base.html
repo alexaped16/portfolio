@@ -7,7 +7,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<link rel="stylesheet" href="/static/main.css">
 <title>Title</title>
 </head>
 <body>
@@ -33,11 +33,9 @@
 
         <div class="nav-item nav-link-container">
 
-            <a class="nav-link" href="{{ url_for('my_portfolio') }}">Portfolio</a>
+            <a class="nav-link margin-3" href="{{ url_for('my_portfolio') }}">Portfolio</a>
     
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-
-            <a class="nav-link" href="{{ url_for('contact') }}">Services</a>
 
         </div>
 
@@ -63,9 +61,8 @@
             <div class="footer-item">
                 <h2>Hours</h2>
                 <div class="days">                   
-                    <p>Mon - Tues |  Closed</p>
-                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
-                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
+                    <p>Sat - Sun |  Closed</p>
+                    <p>Monday - Fri:  9:00 pm - 6:00 pm</p>
                 </div>
             </div>
             <div class="footer-item">
@@ -76,10 +73,9 @@
             </div>
             <div class="footer-item">
                 <div class="copyright">
-                    <h3>Follow me on Insta</h3>
-                    <a id="insta" class="fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
-                    <p>1136 N. Milwaukee Ave</p>
-                    <p>Chicago, IL 60642</p>
+                    <h3>Request a Quote</h3>
+                    <p>laidswebdesign@gmail.com</p>
+                    <p></p>
                 </div>
             </div>
         </div>

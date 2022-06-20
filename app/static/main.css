@@ -18,6 +18,12 @@ body, html {
     height: 100%;
 }
 
+.first-letter {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+
 h1{
     font-family:Arial, Helvetica, sans-serif; 
 }
@@ -64,7 +70,11 @@ p{
 }
 
 .margin-top{
-    margin-top: 4rem;
+    margin-top: 2rem;
+}
+
+.margin-bottom{
+    margin-bottom: 4rem; 
 }
 
 .padding-1{
@@ -89,6 +99,13 @@ p{
     margin-left: 2rem; 
 }
 
+.flex{
+    display: flex; 
+}
+
+.column{
+    flex-direction: column;
+}
 
     
 
@@ -120,14 +137,21 @@ body {
 }
 
 
+.nav-link-container a:hover{
+    font-size:large; 
+    color:rgba(0, 0, 0, 0.573);
+    text-decoration: none; 
+  }
+
   .nav-container{
-      background-color: white;   
+      background-color: rgba(0, 0, 0, 0.067);   
       display: grid; 
-      color: black;  
+      color: black;    
       grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       align-items: center; 
   }
+
 
   .nav-link-container{
     margin: 2rem;  
@@ -201,8 +225,8 @@ body {
 }
 
 footer{
-    color:aliceblue;
-    background-color:rgba(0, 0, 0, 0.634);
+    color:black; 
+    background-color: rgba(0, 0, 0, 0.067);
     margin-top: 5rem;
     padding-top: 25px;
 }
@@ -250,12 +274,23 @@ footer{
 .heroContents {
 	text-align: center;
 	color:black; 
- 
+}
+
+.intro-container{
+    font-size: larger; 
+    margin-left: 6rem;  
+}
+
+.intro-text-container{
+    display: flex;
+    height: 20rem; 
+    background-color: rgba(94, 144, 18, 0.272);
+    align-items: center; 
 }
 
 .intro-text{
-    display: flex; 
-
+    font-size: 1.5rem;
+    margin-inline: 4rem;  
 }
 
 
@@ -267,6 +302,12 @@ footer{
 
 .item-1{
   margin-left: 1rem; 
+}
+
+.portfolio-heading{
+    grid-column: 1 / span 2;
+    display: flex; 
+    justify-content: center;
 }
 
 .portfolio-grid-container a{
@@ -318,6 +359,69 @@ footer{
 .image-border{
     border: black 2px solid;
 }
+
+
+/* CONTACT  */
+
+.grid-container-3{
+    max-width:fit-content; 
+    margin: 0px auto;
+    padding: 0px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 60px;
+    align-items: center;
+}
+
+form{
+    margin-bottom: 60px;
+}
+
+.form-group{
+    font-family: Roboto-Thin;
+    text-transform: uppercase;
+    padding-top: 30px;
+    letter-spacing: 5px;
+}
+  
+
+.form-row{
+    width: 50%;
+    color: black; 
+}
+
+
+
+
+.form-group .placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase; 
+    padding-top: 10px; 
+    letter-spacing: 5px; 
+}
+
+.btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px; 
+    margin-top: 20px; 
+    letter-spacing: 10px;
+    color:black;
+    background-color:transparent;
+    width: 30%;
+}
+
+.form-control{
+    text-transform: uppercase;
+    font-size: 12px; 
+    letter-spacing: 10px;
+    background-color: transparent;
+    width: 70%;
+    
+}
+
+
+
 
 
 

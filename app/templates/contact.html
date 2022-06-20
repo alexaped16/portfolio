@@ -15,12 +15,40 @@
     {% extends 'base.html' %}
 
     {% block content %}
+
+    <div class="portfolio-heading">
+        <h2 class="margin-top">Get in Touch</h2>
+    </div>
    
 
+        <div class="item-1 container flexbox center"> 
+            <p class="padding-1 margin-3"> I create websites with strategy in design and branding.</p>
+            <img class="margin-3" src="{{url_for('static', filename='002745980001.jpg')}}" height="70%", width="70%" alt="">
+        </div>
 
-    <div class="grid-container">
+
         
-    </div>
+        <div class="item-1">
+            <form target="_blank" action="https://formsubmit.co/erosenberg@ego.thechicagoschool.edu" method="POST">
+                <div  class="form-group">
+                <div class="form-row">
+                    <h3 class="send-message margin-bottom">Request a Quote</h3>
+                    <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+                <p class="margin-top">I will get back to you shortly!</p>
+            </form>
+        </div>
+
+            
+        
+
 
 
     {% endblock content %}
