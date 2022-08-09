@@ -24,61 +24,84 @@
             <img class="phone opacity-50" src="/static/index-collage.png" height="100%" width="100%">
             
             <div class="hero-title">
-                <h2 class="word-spacing-1 celine-peach font-size-5">Welcome,</h2>
-                <p class="font-size-2 everson">Allow me to introduce myself</p>
+                <h1 class="word-spacing-1 ">Welcome,</h1>
+                <h2 class="">Allow me to introduce myself</h2>
             </div>
         </div>
     </div>
 
-    <div class="intro-container">
 
-        <div class="flexbox-row">
-            <p class="font-size-1-2"> My name is</p>
-            <h2 class=" margin-1 emerson">Alexa</h2>
+    <div class="container center grid-container pinside40">
+        <div class="intro-container">
+            <div class="flexbox-row">
+                <h2 class=" margin-1 emerson">My name is Alexa. I'm a web developer who specializes in design and branding</h2>
+            </div>
         </div>
-
-        <div class="flexbox-row center margin-top margin-bottom">
-            <p class="" >I am a</p>
-            <h2 class="margin-1">front-end developer</h2>
-        </div>
-
-        <p class="margin-1 margin-top">who specializes in </p>
-        <h2 class="margin-3">design + branding. </h2>
-
+        <grid>
+            <img class="phone   opacity-50" src="/static/Screen Shot 2022-04-28 at 5.29.59 PM.png" height="100%" width="100%">
+            <p class="phone   margin-top">Current Project: Description Coming Soon</p>
+        </grid>
     </div>
 
-    <div class="container center">
-        <img class="phone image-border margin-3 padding-1 opacity-50" src="/static/Screen Shot 2022-04-28 at 5.29.59 PM.png" height="50%" width="50%">
-        <p class="phone  margin-3 margin-top">Project Description Coming Soon</p>
-    </div>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ceff59" fill-opacity="1" d="M0,96L26.7,101.3C53.3,107,107,117,160,154.7C213.3,192,267,256,320,256C373.3,256,427,192,480,192C533.3,192,587,256,640,256C693.3,256,747,192,800,160C853.3,128,907,128,960,149.3C1013.3,171,1067,213,1120,208C1173.3,203,1227,149,1280,117.3C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+</svg>
 
-    <div class="intro-text-container portfolio-heading">
-        <p class="intro-text"><span class="first-letter">Design</span> showcases the value of your business and communicates a level of luxury service. 
+<section class="dark-50">
+    <h2 class="pinside40 medium-title">I run a company called... </h2>
+</section>
+
+<section class="grid-container-75">
+    <img class="" src="/static/funkygrid-01.png" height="100%" width="100%" alt="" class="">
+
+    <img class="phone   opacity-50" src="/static/vernon-logo-1-03.png" height="100%" width="100%">
+</section>
+
+    <div id="" class="pattern-1 intro-text-container portfolio-heading">
+        <p class="medium-title pinside40">Design showcases the value of your business and communicates a level of luxury service. 
         The best websites are designed with a strategic brand as the foundation. 
-        Web Design is more than fonts and colors, it’s building a brand based on strategy that communicates the 
-        <span class="first-letter">value of your business</span>. </p>
+        Web Design is more than fonts and colors, it’s building a brand based on strategy that tells your story. 
+         </p>
     </div>
 
 
 
-    <div class="flexbox-row center">
-        <h2>Services Available</h2>
+    <div class="flexbox-row center grid-container pinside40">
+        <h2 class="text-grad-1">Services Available</h2>
+    
+            <div class="flex column center pinside40">
+                <p>Web Design</p>
+                <p>Front-end Development</p>
+                <p>Logo & LogoMarks</p>
+                <p>Photo and Video Direction</p>
+                <p>Website Hosting</p>
+            </div>
+
     </div>
 
 
-    <div class="flex column center">
-        <p>Web Design</p>
-        <p>Front-end Development</p>
-        <p>Logo & LogoMarks</p>
-        <p>Photo and Video Direction</p>
-        <p>Website Hosting</p>
+    <div class=" portfolio-heading">
+        <p class="intro-text text-grad-1"><span class="first-letter">Basically,</span> I am a one stop shop for small businesses. </p>
+        <div classs="grid-container pinside80">
+            <img class="pinside80" src="/static/funkygrid-01.png" height="80%" width="80%" alt="" class="">
+        </div>
     </div>
 
 
-    <div class="intro-text-container portfolio-heading">
-        <p class="intro-text"><span class="first-letter">Basically,</span> I am a one stop shop for small businesses. 
-             </p>
-    </div>
+    <section id="grad-2">
+        <div class="  pinside40">
+        </div>
+        <div class=" flex dark-50">
+            <h3 class="pinside10">My Influences</h3>
+            <p class="mr100 pinside10">I am inspired by Neo-Brutalism, which has a distinct 50's style that stemmed from Brutalist design. Brutalism references the brutalist architecture movement which emphasized the raw materials of design. Most of the things I love most are just old things. </p>
+            <div class="mr100 pinside10"><a href="{{ url_for('extra1') }}" class="btn mr100 pinside10">Sign Up</a></div>
+            <img class="pinside80" src="/static/IMG_1208.jpg" alt="" class="img details-img">
+        </div>
+   
+    </section>
+
+
+
 
     <a href="{{ url_for('extra1') }}">extra1</a>
     <a href="{{ url_for('extra2') }}">extra2</a>
