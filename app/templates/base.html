@@ -8,38 +8,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="/static/main.css">
-<title>Title</title>
+<title>Vernon Web Designs</title>
 </head>
 <body>
     
-    <div class="nav-container">
-
-
-        <div class="nav-item laids-container">
-            <div class="flexbox flex-start">
-                <h1 class=" celine-peach">L</h1>
-                <h1 class="manolete uppercase outline">a</h1>
-                <h1 class="celine-peach">id</h1>
-                <h1 class="celine-peach uppercase outline">e</h1>
-                <h1 class="celine-peach">s</h1>
-            </div>
-            <p>Web Design</p>
+    <nav class="navbar">
+        <div class="topBar">
+            <img id="nav-logo" src="/static/logo-5-05.png" height="100%" width="100%">
         </div>
-
-        <div class="nav-item">
-            <a class="nav-logo" href="{{ url_for('index') }}"><img src="/static/Laids-logo-image.png" height="15%" width="15%"></a>
+            <i class="uil uil-bars toggle"></i>
         </div>
+        <ul class="navMenu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('my_portfolio') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
 
+        </ul>
+            
 
-        <div class="nav-item nav-link-container">
-
-            <a class="nav-link margin-3" href="{{ url_for('my_portfolio') }}">Portfolio</a>
-    
-            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-
-        </div>
-
-</div>
+    </nav>
 
 
 
@@ -67,15 +54,15 @@
             </div>
             <div class="footer-item">
                 <div class="copyright">
-                    <img id="footer-logo" src="/static/Laids-logo-image.png" width="20%" height="60%">
-                    <p>Laides Web Design © 2022</p>
+                    <img id="footer-logo" src="/static/vernon-logo-1-03.png" width="80%" height="80%">
+                    
                 </div>
             </div>
             <div class="footer-item">
                 <div class="copyright">
-                    <h3>Request a Quote</h3>
-                    <p>laidswebdesign@gmail.com</p>
-                    <p></p>
+                    <h3></h3>
+                    <p>If you'd like to ask a question or request a quote, reach out! </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-lg btn-dark btn-block"> Reach Out</a>
                 </div>
             </div>
         </div>

@@ -15,3 +15,11 @@ def my_portfolio():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/extra1')
+def extra1():
+    return render_template('extra1.html')
+
+@app.route('/extra2')
+def extra2():
+    return render_template('extra2.html')
