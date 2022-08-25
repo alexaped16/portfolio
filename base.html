@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/static/main.css">
+<title>Vernon Web Designs</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="topBar">
+            <img id="nav-logo" src="/static/logo-5-05.png" height="100%" width="100%">
+        </div>
+            <i class="uil uil-bars toggle"></i>
+        </div>
+        <ul class="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my_portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+<div class="">
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+</div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h2>Hours</h2>
+                <div class="days">                   
+                    <p>Sat - Sun |  Closed</p>
+                    <p>Monday - Fri:  9:00 pm - 6:00 pm</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <img id="footer-logo" src="/static/vernon-logo-1-03.png" width="80%" height="80%">
+                    
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <h3></h3>
+                    <p>If you'd like to ask a question or request a quote, reach out! </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-lg btn-dark btn-block"> Reach Out</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+    </html>
